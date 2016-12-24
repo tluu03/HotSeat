@@ -10,8 +10,8 @@ that you have [Python3](https://www.python.org/downloads/) and
 [Node.js](https://nodejs.org/en/) (with npm) installed.
 
 ```
-pyvenv env
-source env/bin/activate
+virtualenv venv
+source venv/bin/activate
 pip install -r requirements.txt
 npm install
 ```
