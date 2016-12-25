@@ -12,6 +12,10 @@ parser = reqparse.RequestParser()
 def index():
     return render_template('index.html')
 
+@app.route('/get_students')
+def get_students():
+    return render_template('index.html')
+
 
 if __name__ == '__main__':
     app.run(debug=True)

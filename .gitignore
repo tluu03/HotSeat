@@ -7,3 +7,6 @@ npm-debug.log
 
 # Compiled files don't belong in git
 static
+
+# Ignoring pyc files
+*.pyc
