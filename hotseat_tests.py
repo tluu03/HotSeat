@@ -3,7 +3,8 @@ import json
 import unittest
 import tempfile
 import StudentService
-
+import GradeService
+import Class
 class HotseatTestCase(unittest.TestCase):
 
     def setUp(self):
@@ -30,6 +31,14 @@ class HotseatTestCase(unittest.TestCase):
         # Assert
         self.assertEqual(answer, students)
 
+    def test_calculate_average(self):
+        db = None
+        self.grade_service = GradeService.GradeService(db)
+
+    def test_get_class(self):
+        answer = 1
+        class = self.class_service.get_students()
+        self.assertEqual(answer, students)
 
 if __name__ == '__main__':
     unittest.main()
