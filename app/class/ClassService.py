@@ -6,13 +6,12 @@ class ClassService():
     def get_class(self):
 	    return 1
 
-    def add_class(self, class):
-        class = self.db.get_class()
+    def add_class(self, c):
+        c = self.db.add_class()
+        return c
 
-        return class
-
-    def delete_class(self, class):
+    def delete_class(self, c):
         pass
 
-    def edit_class(self, class):
+    def edit_class(self, c):
         pass
