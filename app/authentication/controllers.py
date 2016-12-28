@@ -30,6 +30,6 @@ def signin():
 
             return redirect(url_for('auth.home'))
 
-        flash('Wrong email/ password', 'error-message')
+        flash('Wrong email/ password', 'error')
 
     return render_template("authentication/signin.html", form=form)

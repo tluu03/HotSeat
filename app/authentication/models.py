@@ -1,4 +1,3 @@
-
 # Import the database object (db) from the main application module
 # We will define this inside /app/__init__.py in the next sections.
 from app import db
@@ -8,13 +7,12 @@ from app.common.models import Base
 # Define User model
 class User(Base):
     # New instance instantiating procedure
-    def __init__(self, name, email, password):
+    def __init__(self, name, email, password, role, status):
         self.name = name
         self.email = email
         self.password = password
-
-    def __repr__(self):
-        return '<User %r>' % (self.name)
+        self.role = role
+        self.status = status
 
     __tablename__ = 'auth_user'
 
