@@ -1,6 +1,6 @@
 # hotseat
 
-Below you have instructions on how the skeleton project has been set up.
+Below you have instructions on setting up hotseat.
 
 ## Up and running
 
@@ -33,7 +33,7 @@ API.
 
 ```
 npm run test
-python api.py
+python app/tests/<testFile>.py
 ```
 
 You can also run the JavaScript tests in watch mode by passing an additional
