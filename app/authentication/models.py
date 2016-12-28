@@ -2,7 +2,7 @@
 # Import the database object (db) from the main application module
 # We will define this inside /app/__init__.py in the next sections.
 from app import db
-from app.common import Base
+from app.common.models import Base
 
 
 # Define User model
@@ -28,4 +28,3 @@ class User(Base):
     # Auth
     role = db.Column(db.SmallInteger, nullable=False)
     status = db.Column(db.SmallInteger, nullable=False)
-

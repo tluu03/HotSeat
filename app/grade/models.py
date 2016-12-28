@@ -4,4 +4,3 @@ class Grade:
         self.test_name = test_name
         self.id = id
         self.score = score
-        

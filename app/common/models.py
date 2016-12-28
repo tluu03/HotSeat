@@ -1,4 +1,5 @@
 # Define a base model for other database tables to inherit
+
 class Base(db.Model):
 
     __abstract__  = True
