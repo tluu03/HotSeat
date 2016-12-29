@@ -27,4 +27,5 @@ CSRF_SESSION_KEY = "secret"
 SECRET_KEY = "secret"
 
 # Database
-SQLALCHEMY_DATABASE_URI = "mysql://root:admin@localhost/hotseatlocaldb"
+# SQLALCHEMY_DATABASE_URI = "mysql://root:admin@localhost/hotseatlocaldb"
+SQLALCHEMY_DATABASE_URI = "mysql://root:t0nyluu01@localhost/hotseatlocaldb"

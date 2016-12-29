@@ -4,7 +4,6 @@ from flask import Flask, render_template
 # Import SQLAlchemy
 from flask.ext.sqlalchemy import SQLAlchemy
 
-# Define WSGI app obj
 app = Flask(__name__)
 
 # Configs

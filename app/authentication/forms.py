@@ -1,5 +1,5 @@
 # Import Form
-from flask.ext.wtf import Form #o
+from flask.ext.wtf import Form 
 
 # Import Form elements such as TextField and BooleanField
 from wtforms import TextField, PasswordField
@@ -8,8 +8,8 @@ from wtforms import TextField, PasswordField
 from wtforms.validators import Required, Email, EqualTo
 
 # Define login from WTForms
-
 class LoginForm(Form):
     email = TextField('Email Address', [Email(), Required(message='Forgot your email?')])
 
     password = PasswordField('Password', [Required(message='Must provide a password.')])
+
