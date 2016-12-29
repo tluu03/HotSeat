@@ -1,5 +1,5 @@
 from app import db
-from app.common.models import Base
+from app.common
 
 class Student(Base):
     def __init__(self, student_id, name):
@@ -11,4 +11,3 @@ class Student(Base):
 
     student_id = db.Column(db.Integer, nullable=True)
     name = db.Column(db.String(128), nullable=False)
-

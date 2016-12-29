@@ -1,4 +1,5 @@
 from app import db
+from app.common.models import Base
 
 # Define a base model for other database tables to inherit
 class Base(db.Model):
