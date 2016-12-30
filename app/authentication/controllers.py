@@ -10,8 +10,8 @@ from app import db
 # Import module forms
 from app.authentication.forms import LoginForm
 
-# Import module models
-from app.authentication.models import User
+# Import services
+from app.authentication.services import UserService as user_service
 
 # Define blueprint: 'auth', set its url prefix: app.url/auth
 mod_auth  = Blueprint('auth', __name__, url_prefix='/auth')
@@ -22,7 +22,7 @@ def signin():
     form = LoginForm(request.form)
 
     if (form.validate_on_submit()):
-        user = User.query.filter_by(email=form.email.data).first()
+        user = user_service.get_user(form.email.data)
 
         if (user and check_password_hash(user.password, form.password.data)):
             session['user_id'] = user.id
