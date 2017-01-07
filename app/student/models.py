@@ -9,6 +9,6 @@ class Student(Base):
 
     __tablename__ = 'student'
 
-    student_id = db.Column(db.Integer, nullable=True)
+    student_id = db.Column(db.Integer, nullable=False)
     name = db.Column(db.String(128), nullable=False)
 
